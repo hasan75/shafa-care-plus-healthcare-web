@@ -2,20 +2,20 @@ import { createContext } from "react";
 import useServices from "../hooks/useServices";
 import useCart from "../hooks/useCart";
 import useDoctors from "../hooks/useDoctors";
-// import useFirebase from "../hooks/useFirebase.js";
+import useFirebase from "../hooks/useFirebase";
 
 
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   // hooks
-//   const AllContexts = useFirebase();
+  const AllContexts = useFirebase();
   const { services } = useServices();
   const { doctors } = useDoctors();
   const { addToCart, selectedService, remove, setSelectedService } = useCart();
 
   const data = {
-
+    AllContexts,
     services,
     doctors,
     addToCart,

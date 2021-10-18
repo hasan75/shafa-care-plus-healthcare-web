@@ -12,6 +12,10 @@ import Services from './components/Services/Services';
 import Cart from './components/Cart/Cart';
 import Details from './components/Details/Details';
 import Doctors from './components/Doctors/Doctors';
+import Login from './components/Login/Login';
+import Signup from './components/SignUp/SignUp';
+import Reset from './components/Reset/Reset';
+import PrivateRoute from './Route/PrivateRoute';
 
 function App() {
   return (
@@ -39,14 +43,23 @@ function App() {
             <Services></Services>
             <Doctors></Doctors>
           </Route>
-          <Route exact path='/cart'>
+          <PrivateRoute exact path='/cart'>
             <Cart></Cart>
-          </Route>
+          </PrivateRoute>
           <Route exact path='/doctors'>
             <Doctors></Doctors>
           </Route>
-          <Route exact path='/services/:key'>
-              <Details></Details>
+          <PrivateRoute exact path='/services/:key'>
+            <Details></Details>
+          </PrivateRoute>
+          <Route path='/login'>
+            <Login></Login>
+          </Route>
+          <Route path='/signup'>
+            <Signup></Signup>
+          </Route>
+          <Route path='/reset'>
+            <Reset></Reset>
           </Route>
 
         </Switch>
