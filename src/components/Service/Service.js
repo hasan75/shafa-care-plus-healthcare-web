@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import Rating from "react-rating";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar as fullStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as fullStar, faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
 import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 import Zoom from "react-reveal/Zoom";
 import { NavLink } from "react-router-dom";
@@ -11,6 +11,7 @@ const Service = ({ service }) => {
   const { key, img, title, detail, fees, rating, ratingCount } = service;
 
   const { addToCart } = useAuth();
+  const calendar = <FontAwesomeIcon icon = {faCalendarCheck}></FontAwesomeIcon>
 
 
   return (
@@ -55,14 +56,14 @@ const Service = ({ service }) => {
                 to={`/services/${key}`}
                 className="btn btn-primary w-100 me-1"
               >
-                View Details
+                Details
               </NavLink>
 
               <button
                 onClick={() => addToCart(service)}
                 className="btn btn-primary  w-100"
               >
-                Appointment
+                {calendar} Appointment
               </button>
             </Card.Body>
           </Card>

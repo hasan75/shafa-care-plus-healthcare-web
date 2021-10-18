@@ -3,8 +3,6 @@ import {
   sendEmailVerification,
   updateProfile,
   createUserWithEmailAndPassword,
-  FacebookAuthProvider,
-  GithubAuthProvider,
   signOut,
   getAuth,
   onAuthStateChanged,
@@ -19,8 +17,7 @@ firebaseInitialization();
 
 // Providers
 const googleProvider = new GoogleAuthProvider();
-// const gitHubProvider = new GithubAuthProvider();
-// const fbProvider = new FacebookAuthProvider();
+
 
 const auth = getAuth();
 
@@ -45,15 +42,6 @@ const useFirebase = () => {
     return signInWithPopup(auth, googleProvider);
   }
 
-  // gitHub sign in
-//   function signInWithGithub() {
-//     return signInWithPopup(auth, gitHubProvider);
-//   }
-
-  // facebook sign in
-//   function signInWithFacebook() {
-//     return signInWithPopup(auth, fbProvider);
-//   }
   // Email sign in
   function signInWithEmail(e) {
     e.preventDefault();
@@ -148,8 +136,6 @@ const useFirebase = () => {
 
   return {
     signInWithEmail,
-    // signInWithFacebook,
-    // signInWithGithub,
     logOut,
     signInWithGoogle,
     user,

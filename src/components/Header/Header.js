@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar, NavDropdown, Badge } from "react-bootstrap";
 import logo from "./../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faClinicMedical } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import useAuth from "../../hooks/useAuth";
@@ -46,7 +46,7 @@ const Header = () => {
               <Nav.Link as={NavLink} to="/cart" className="text-white header-button">
                 <FontAwesomeIcon
                   style={{ fontSize: "20px" }}
-                  icon={faShoppingCart}
+                  icon={faClinicMedical}
                 />
                 <Badge>{selectedService.length}</Badge>
               </Nav.Link>

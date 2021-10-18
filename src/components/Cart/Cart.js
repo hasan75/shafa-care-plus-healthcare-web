@@ -94,7 +94,7 @@ const Cart = () => {
                 }}
                 className="btn btn-primary"
               >
-                Check Out
+                Check Out with The Services
               </button>
             </Col>
           </Row>

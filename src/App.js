@@ -16,6 +16,7 @@ import Login from './components/Login/Login';
 import Signup from './components/SignUp/SignUp';
 import Reset from './components/Reset/Reset';
 import PrivateRoute from './Route/PrivateRoute';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
   return (
@@ -52,14 +53,17 @@ function App() {
           <PrivateRoute exact path='/services/:key'>
             <Details></Details>
           </PrivateRoute>
-          <Route path='/login'>
+          <Route exact path='/login'>
             <Login></Login>
           </Route>
-          <Route path='/signup'>
+          <Route exact path='/signup'>
             <Signup></Signup>
           </Route>
-          <Route path='/reset'>
+          <Route exact path='/reset'>
             <Reset></Reset>
+          </Route>
+          <Route path='*'>
+             <PageNotFound></PageNotFound>
           </Route>
 
         </Switch>
