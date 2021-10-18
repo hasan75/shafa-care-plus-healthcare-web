@@ -1,12 +1,12 @@
 import React from 'react';
-import About from '../About/About';
-import Slide from './Slide/Slide';
+import Services from '../Services/Services';
+import TopBanSlider from './TopBanSlider/TopBanSlider';
 
 const Home = () => {
     return (
         <div>
-            <Slide></Slide>
-            <About></About>
+            <TopBanSlider></TopBanSlider>
+            <Services></Services>
         </div>
     );
 };

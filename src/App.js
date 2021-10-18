@@ -7,10 +7,13 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import AuthProvider from './contexts/AuthProvider';
+import Services from './components/Services/Services';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
          <Header></Header>
         <Switch>
@@ -26,10 +29,15 @@ function App() {
           <Route exact path='/contact'>
             <Contact></Contact>
           </Route>
+          <Route exact path='/services'>
+            <Services></Services>
+          </Route>
 
         </Switch>
          <Footer></Footer>
       </Router>
+      </AuthProvider>
+      
     </div>
   );
 }
