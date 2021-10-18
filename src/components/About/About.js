@@ -1,58 +1,60 @@
 import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import "./About.css"
+import featuredImg from '../../images/featured-image.jpg'
 
 import Bounce from "react-reveal/Bounce";
 import Zoom from "react-reveal/Zoom";
 const About = () => {
   return (
     <div
-      className="py-5"
+      className="py-5 about"
     >
       <Container>
         <Zoom>
-          <h2 className="text-center text-white mb-4">
-            WELCOME TO CODING CLUB INSTITUTE
+          <h2 className="text-center text-dark mb-4">
+            About ShafaCare Plus
           </h2>
         </Zoom>
         <Row>
           <Col md className="pe-3">
             <Bounce bottom>
-              <h5 className="text-white">About Us</h5>
+              <h5 className="text-dark">About Us</h5>
               <p className="text-muted">
-                There are countless online education marketplaces on the
-                internet. And there’s us. We are not the biggest. We are not the
-                cheapest. But we are the fastest growing. We have the highest
-                course completion rate in the industry.
+              ShafaCare Plus Limited is a tertiary care hospital and the leading contributor of private healthcare services in Bangladesh. This has been achieved only through consistent commitment to improve the lives of people through utmost service excellence since its inception on 16th December, 2006. Shafa Care is one of the ventures of Square Group which is the top business group of the country.
+              
               </p>
               <p className="text-muted">
-                And the reason is, we don’t give up. When a student commits to a
-                course, we commit to the student. We are not going to sugar coat
-                it - we will make you complete, come what may. You may not have
-                given much thought to what you are signing up for, but we
-                believe you are signing up for knowledge that is useful and
-                complete. We are ridiculously committed to our students. Be it
-                constant reminders, relentless masters or 24 x 7 online support
-                - we will absolutely make sure that you run out of excuses to
-                not complete the course.
+              The reputation of Shafa Care is the result of quality clinical outcome and comprehensive care, made achievable through world class integrated healthcare facilities by highly trained professionals. Thus, Shafa Care strives to meet patients’ standards through quality healthcare and making a difference in their lives.
+              </p>
+              <p className="text-muted">
+              The goal of the hodsital is :
+              Adhering to high ethical and moral standards at all times
+              Making service quality top priority in all we do.
+              Training staff to work within a quality care environment.
+              Providing quality health care service in all processes.
+              Delivering customer satisfaction through quality service.
+              The outpatient department (OPD) of the hospital can serve	Up to 2500 patients daily
+              Open daily, except Friday
               </p>
             </Bounce>
           </Col>
           <Col md className="pe-3">
             <Bounce bottom>
-              <h5 className="text-white">Our Vision</h5>
+              <div className="mb-3">
+                  <img src={featuredImg} alt="" srcset="" />
+              </div>
+              <h5 className="text-dark">Our Vision</h5>
               <p className="text-muted">
-                To become the largest online learning ecosystem for continuing
-                education, in partnership with corporates and academia.
+                <ul>
+                    <li>To be on a planet devoid of the distressed and the diseased;</li>
+                    <li>To be at the level where help is sought to save lives;</li>
+                    <li>To be an institution that rises above pettiness to help humanity;</li>
+                </ul>
               </p>
-              <h5 className="text-white">Our Mission</h5>
+              <h5 className="text-dark  pt-1">Our Mission</h5>
               <p className="text-muted">
-                To create an alternate platform for students who wish to
-                continue and complete courses by attending live online courses,
-                using a team of ridiculously committed educators who will stop
-                at nothing to impart education, helped by a 24 x 7 support
-                system. By deploying our world class team of industry experts,
-                we aim to educate our learners with the skills they need to
-                advance their professional life to the next level.
+                    To become the most trusted premier institution serving the sufferings of humanity and people’s welfare oriented activities.
               </p>
             </Bounce>
           </Col>
@@ -61,9 +63,9 @@ const About = () => {
         <Row className="mt-4">
           <Col md>
             <Bounce bottom>
-              <h5 className="text-white">Sign up for our monthly newsletter</h5>
+              <h5 className="text-dark">Sign up for our monthly newsletter</h5>
               <p className="text-muted">
-                Be the first to know about news and updates.We never share you
+                Be the first to know about news and health updates.We never share you
                 mail with others. Trust us!
               </p>
             </Bounce>
@@ -71,7 +73,7 @@ const About = () => {
           <Col md className="d-flex align-items-center">
             <Bounce bottom>
               <Form className="w-100">
-                <Form.Label className="text-white">
+                <Form.Label className="text-dark">
                   Leave your mail below
                 </Form.Label>
                 <Form.Group

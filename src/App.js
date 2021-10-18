@@ -5,15 +5,22 @@ import Header from './components/Header/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 
 function App() {
   return (
     <div className="App">
       <Router>
          <Header></Header>
-         <Home></Home>
         <Switch>
-          <Route>
+          <Route exact path='/'>
+            <Home></Home>
+          </Route>
+          <Route exact path='/home'>
+            <Home></Home>
+          </Route>
+          <Route exact path='/about'>
+            <About></About>
           </Route>
 
         </Switch>
