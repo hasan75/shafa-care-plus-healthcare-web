@@ -12,14 +12,14 @@ const About = () => {
     >
       <Container>
         <Zoom>
-          <h2 className="text-center text-dark mb-4">
+          <h2 className="text-center text-white mb-4">
             About ShafaCare Plus
           </h2>
         </Zoom>
         <Row>
           <Col md className="pe-3">
             <Bounce bottom>
-              <h5 className="text-dark">About Us</h5>
+              <h5 className="text-white">About Us</h5>
               <p className="text-muted">
               ShafaCare Plus Limited is a tertiary care hospital and the leading contributor of private healthcare services in Bangladesh. This has been achieved only through consistent commitment to improve the lives of people through utmost service excellence since its inception on 16th December, 2006. Shafa Care is one of the ventures of Square Group which is the top business group of the country.
               
@@ -42,9 +42,9 @@ const About = () => {
           <Col md className="pe-3">
             <Bounce bottom>
               <div className="mb-3">
-                  <img src={featuredImg} alt="" srcset="" />
+                  <img className="about-img" src={featuredImg} alt="" srcset="" />
               </div>
-              <h5 className="text-dark">Our Vision</h5>
+              <h5 className="text-white">Our Vision</h5>
               <p className="text-muted">
                 <ul>
                     <li>To be on a planet devoid of the distressed and the diseased;</li>
@@ -52,7 +52,7 @@ const About = () => {
                     <li>To be an institution that rises above pettiness to help humanity;</li>
                 </ul>
               </p>
-              <h5 className="text-dark  pt-1">Our Mission</h5>
+              <h5 className="text-white  pt-1">Our Mission</h5>
               <p className="text-muted">
                     To become the most trusted premier institution serving the sufferings of humanity and people’s welfare oriented activities.
               </p>
@@ -63,7 +63,7 @@ const About = () => {
         <Row className="mt-4">
           <Col md>
             <Bounce bottom>
-              <h5 className="text-dark">Sign up for our monthly newsletter</h5>
+              <h5 className="text-white">Sign up for our monthly newsletter</h5>
               <p className="text-muted">
                 Be the first to know about news and health updates.We never share you
                 mail with others. Trust us!
@@ -73,7 +73,7 @@ const About = () => {
           <Col md className="d-flex align-items-center">
             <Bounce bottom>
               <Form className="w-100">
-                <Form.Label className="text-dark">
+                <Form.Label className="text-white">
                   Leave your mail below
                 </Form.Label>
                 <Form.Group

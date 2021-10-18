@@ -30,8 +30,11 @@ const Header = () => {
               <Nav.Link as={NavLink} to="/contact" className="text-white">
                 Contact
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/courses" className="text-white">
+              <Nav.Link as={NavLink} to="/services" className="text-white">
                 Services
+              </Nav.Link>
+              <Nav.Link as={NavLink} to="/appointment" className="text-white">
+                Appointment
               </Nav.Link>
               <Nav.Link as={HashLink} to="/home#feature" className="text-white">
                 Emergency Services
