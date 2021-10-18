@@ -82,7 +82,7 @@ const Cart = () => {
               })}
             </Col>
             <Col className="text-center" md={4}>
-              <h4>Total {selectedService.length} course selected</h4>
+              <h4>Total {selectedService.length} Services selected</h4>
               <h6>Total Fees: {totalPrice.toFixed(2)} $</h6>
 
               <button
