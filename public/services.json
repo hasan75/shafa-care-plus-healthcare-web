@@ -1,0 +1,93 @@
+[
+    {
+      "key": 1,
+      "img": "https://hasan-images.netlify.app/react.jpg",
+      "title": "Lab Test",
+      "detail": "All kind of lab test can be done from this hospital. You will get 25% discount on every lab test everytime you want to test some testing. Our hospital provides the best lab tests.",
+      "fees": 1000,
+      "rating": 5,
+      "ratingCount": "320",
+      "dept" : "Laboratory"
+    },
+    {
+      "key": 2,
+      "img": "https://hasan-images.netlify.app/js.png",
+      "title": "Dental Care",
+      "detail": "Dental Care is one of the sensitive department which is handled by the very proffesional doctors of ours.",
+      "fees": 34779,
+      "rating": 4.2,
+      "ratingCount": "450",
+      "dept" : "Dental"
+    },
+    {
+      "key": 3,
+      "img": "https://hasan-images.netlify.app/html-css.png",
+      "title": "Cardiac Monitoring",
+      "detail": "Patients with Cardiac Deaseas will get extra care because our hospital was first established to help only the cardiatic patients.",
+      "fees": 18409,
+      "rating": 4,
+      "ratingCount": "680",
+      "dept" : "Cardeology"
+    },
+    {
+      "key": 4,
+      "img": "https://hasan-images.netlify.app/front-end-bundle.png",
+      "title": "Outdoor Checkup",
+      "detail": "Shafa Care Provides OutDoor Checkups for everyone ,anywhere in the Dhaka City",
+      "fees": 4869,
+      "rating": 3.5,
+      "ratingCount": "350",
+      "dept" : "Outpatient"
+    },
+    {
+      "key": 5,
+      "img": "https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/12/Big-Data-Certification-Edureka-300x175.png",
+      "title": "Emergency Care",
+      "detail": "We offer Emergency Care for all of our patients. We have more than 300 ICU beds in the hospital whch all are capable of high care systems",
+      "fees": 50000,
+      "rating": 4.5,
+      "ratingCount": "560",
+      "dept" : "Emergency"
+    },
+    {
+      "key": 6,
+      "img": "https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/08/What-Is-ByteCode-In-Java-300x175.png",
+      "title": "Blood Test",
+      "detail": "Anyonecan test their blood group and other blood test accurately in the hospital at a resonable fees",
+      "fees": 2000,
+      "rating": 4.7,
+      "ratingCount": "500",
+      "dept" : "Blood"
+    },
+    {
+      "key": 7,
+      "img": "https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/07/Array-of-objects-in-Java-300x175.jpg",
+      "title": "Therapeutic Services",
+      "detail": "There are also several therapies provided by our proffesional therapists.",
+      "fees": 5000,
+      "rating": 4.5,
+      "ratingCount": "500",
+      "dept" : "Physiotherapy"
+    },
+    {
+      "key": 8,
+      "img": "https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/06/Python-Interview-Questions-300x175.png",
+      "title": "CCU Services",
+      "detail": "A CCU can also refer to a cardiac care unit, which is a specialized unit for patients with heart-related problems.",
+      "fees": 35000,
+      "rating": 4.5,
+      "ratingCount": "500",
+      "dept" : "CCU"
+    },
+    {
+      "key": 9,
+      "img": "https://d1jnx9ba8s6j9r.cloudfront.net/imgver.2108030958/img/co_img_1113_1601883969.png",
+      "title": "Covid 19 Unit",
+      "detail": "For the pandemic Covid 19, our hospital have separate unit for the Covid 19.There are total 200 ICU dedicated for only covid 19.",
+      "fees": 45000,
+      "rating": 5,
+      "ratingCount": "500",
+      "dept" : "Covid"
+    }
+  ]
+  
