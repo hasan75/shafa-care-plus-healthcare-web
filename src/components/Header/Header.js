@@ -4,10 +4,11 @@ import logo from "./../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import "./Header.css";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+    const { selectedService } = useAuth();
   return (
     <div className="header">
       <Navbar expand="lg">
@@ -39,16 +40,13 @@ const Header = () => {
               <Nav.Link as={NavLink} to="/doctors" className="text-white">
                 Doctors
               </Nav.Link>
-              <Nav.Link as={HashLink} to="/home#feature" className="text-white">
-                Emergency Services
-              </Nav.Link>
 
               <Nav.Link as={NavLink} to="/cart" className="text-white">
                 <FontAwesomeIcon
                   style={{ fontSize: "20px" }}
                   icon={faShoppingCart}
                 />
-                <Badge>2</Badge>
+                <Badge>{selectedService.length}</Badge>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

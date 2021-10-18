@@ -9,6 +9,9 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import AuthProvider from './contexts/AuthProvider';
 import Services from './components/Services/Services';
+import Cart from './components/Cart/Cart';
+import Details from './components/Details/Details';
+import Doctors from './components/Doctors/Doctors';
 
 function App() {
   return (
@@ -31,6 +34,19 @@ function App() {
           </Route>
           <Route exact path='/services'>
             <Services></Services>
+          </Route>
+          <Route exact path='/appointment'>
+            <Services></Services>
+            <Doctors></Doctors>
+          </Route>
+          <Route exact path='/cart'>
+            <Cart></Cart>
+          </Route>
+          <Route exact path='/doctors'>
+            <Doctors></Doctors>
+          </Route>
+          <Route exact path='/services/:key'>
+              <Details></Details>
           </Route>
 
         </Switch>

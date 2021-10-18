@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const useCart = () => {
-  const [selectedCourse, setSelectedCourse] = useState([]);
+  const [selectedService, setSelectedService] = useState([]);
 
   useEffect(() => {
     const cart = getCart();
-    setSelectedCourse(cart);
+    setSelectedService(cart);
   }, []);
 
   function getCart() {
@@ -19,29 +19,29 @@ const useCart = () => {
     return cart;
   }
 
-  function addToCart(course) {
-    const isHave = selectedCourse.find(
-      (selected) => selected.key === course.key
+  function addToCart(service) {
+    const isHave = selectedService.find(
+      (selected) => selected.key === service.key
     );
 
     if (isHave) {
-      alert("course has been selected!");
+      alert("service has been selected!");
     } else {
-      const newSelection = [...selectedCourse, course];
+      const newSelection = [...selectedService, service];
       localStorage.setItem("cart", JSON.stringify(newSelection));
-      setSelectedCourse(newSelection);
+      setSelectedService(newSelection);
     }
   }
 
   function remove(key) {
-    const selectAfterRemove = selectedCourse.filter(
-      (course) => course.key !== key
+    const selectAfterRemove = selectedService.filter(
+      (service) => service.key !== key
     );
     localStorage.setItem("cart", JSON.stringify(selectAfterRemove));
-    setSelectedCourse(selectAfterRemove);
+    setSelectedService(selectAfterRemove);
   }
 
-  return { setSelectedCourse, remove, addToCart, selectedCourse };
+  return { setSelectedService, remove, addToCart, selectedService: selectedService };
 };
 
 export default useCart;

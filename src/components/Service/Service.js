@@ -6,9 +6,11 @@ import { faStar as fullStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";
 import Zoom from "react-reveal/Zoom";
 import { NavLink } from "react-router-dom";
-//import useAuth from "../../hooks/useAuth";
+import useAuth from "../../hooks/useAuth";
 const Service = ({ service }) => {
   const { key, img, title, detail, fees, rating, ratingCount } = service;
+
+  const { addToCart } = useAuth();
 
 
   return (
@@ -50,17 +52,17 @@ const Service = ({ service }) => {
             </Card.Body>
             <Card.Body className="d-flex">
               <NavLink
-                to={`/courses/${key}`}
+                to={`/services/${key}`}
                 className="btn btn-primary w-100 me-1"
               >
                 View Details
               </NavLink>
 
               <button
-                // onClick={() => addToCart(course)}
+                onClick={() => addToCart(service)}
                 className="btn btn-primary  w-100"
               >
-                Add to Cart
+                Appointment
               </button>
             </Card.Body>
           </Card>
