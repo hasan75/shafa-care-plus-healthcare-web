@@ -22,7 +22,7 @@ const Details = () => {
       setServiceDoctors(matchedDoctors)
   },[doctors]);
 
-      //routing to course page using history api
+      //routing to service page using history api
       const handleButtonClick = () => {
         history.push('/services')
     }
