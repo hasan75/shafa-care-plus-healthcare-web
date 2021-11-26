@@ -14,7 +14,11 @@
 
 # ShafaCare Plus Webapp Description:
 
-- Full Website is a single paged webapp built by react.
+- Full Website is a single paged webapp built by React.
+- A health care website where user can login and register into the
+  website, explore the services.
+- User can see doctor’s details, take appointment, remove appointments.
+- Technologies are used: React, React-Bootstrap, React-Fontawesome, Firebase Authentication, CSS
 - Several components are added and differentiated for React Component Practice Purpose
 - There are several Pages like Home, Services, Appointment, Doctors, About, Contact, Sign Up and Log In pages.
 - For the Designing, React Bootstrap is used in the webapp.
